@@ -20,4 +20,4 @@ $decision->addLockDays($lock);
 $newLock = new OrderLockModel(5, OrderLockModel::DIRECTION_FROM_BEGINING);
 $decision->addLockDays($newLock);
 
-echo print_r($decision->getEffectiveDays()[1]);
+print_r($decision->getEffectiveDays()[1]);
