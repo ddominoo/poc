@@ -1,0 +1,9 @@
+{
+    "name": "testphp/testphp",
+    "autoload": {
+        "psr-4": {
+            "Testphp\\Testphp\\": "src/"
+        }
+    },
+    "require": {}
+}

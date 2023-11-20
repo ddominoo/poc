@@ -1,0 +1,16 @@
+services:
+  testphp:
+    image: php:8.2-cli
+    entrypoint: "/bin/sh"
+    tty: true
+    volumes:
+      - storage_testphp:/var/www/html/app
+
+volumes:
+  storage_testphp:
+    name: testphp_storage
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}
+      o: bind
